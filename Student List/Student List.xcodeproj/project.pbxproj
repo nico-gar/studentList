@@ -62,16 +62,16 @@
 		1C7C264E2920031100E70F63 /* Student List */ = {
 			isa = PBXGroup;
 			children = (
-				1C7C26632920038000E70F63 /* Student.swift */,
-				1C7C26652920045500E70F63 /* StudenController.swift */,
 				1C7C264F2920031100E70F63 /* AppDelegate.swift */,
 				1C7C26512920031100E70F63 /* SceneDelegate.swift */,
-				1C7C26552920031100E70F63 /* Main.storyboard */,
+				1C7C26632920038000E70F63 /* Student.swift */,
+				1C7C26652920045500E70F63 /* StudenController.swift */,
+				1C7C26692920184900E70F63 /* StudentDetailViewController.swift */,
 				1C7C26672920098600E70F63 /* StudentTableViewController.swift */,
+				1C7C26552920031100E70F63 /* Main.storyboard */,
 				1C7C26582920031200E70F63 /* Assets.xcassets */,
 				1C7C265A2920031200E70F63 /* LaunchScreen.storyboard */,
 				1C7C265D2920031200E70F63 /* Info.plist */,
-				1C7C26692920184900E70F63 /* StudentDetailViewController.swift */,
 			);
 			path = "Student List";
 			sourceTree = "<group>";

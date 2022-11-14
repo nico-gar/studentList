@@ -9,7 +9,7 @@ import UIKit
 
 class StudentTableViewController: UITableViewController {
 
-        
+    let studentController = StudentController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +23,13 @@ class StudentTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return StudentController.students.count
+        return self.studentController.students.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StudentCell", for: indexPath)
 
-        let student = StudentController.students[indexPath.row]
+        let student = self.studentController.students[indexPath.row]
         cell.textLabel?.text = student.firstName
 
         return cell
@@ -41,7 +41,7 @@ class StudentTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tappedIndexPath = tableView.indexPathForSelectedRow else {return}
         
-        let student = StudentController.students[tappedIndexPath.row]
+        let student = self.studentController.students[tappedIndexPath.row]
         if let detailVC = segue.destination as? StudentDetailViewController {
             detailVC.student = student
         }
